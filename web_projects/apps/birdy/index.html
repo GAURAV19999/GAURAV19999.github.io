@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Birdy</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet prefetch' href='css/9e74ee366a6625313e2bfe354.css'>
+
+<style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#shadow-home .circle { fill: #02BD85 }
+#shadow-home .base { fill: #F1F1F1 }
+#shadow-home .hole { fill: #C3C3C3 }
+#shadow-home .roof { fill: #D34141 }
+.back{
+  position: absolute;
+  margin-left: 3%;
+  margin-top: 3%;
+  z-index: 2;
+}
+
+.pen-content {
+  margin-top: 100%;
+  width: 170px !important;
+  height: 230px !important;
+}
+body{
+  display: flex;
+  background: #faf8ef;
+  position: relative;
+}
+.birddy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #faf8ef;
+  position: relative;
+}
+
+.bird {
+  width: 170px;
+  height: 200px;
+  transform-origin: bottom center;
+  animation: bird 3s infinite both;
+}
+
+.body {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  border-radius: 20% 50% 50% 50%;
+  transform: rotate(45deg);
+  background: #31C6B3;
+  border: 5px solid #2F525D;
+  margin-top: 30px;
+  overflow: hidden;
+}
+.body:before {
+  content: '';
+  position: absolute;
+  background: #31C6B3;
+  width: 200px;
+  height: 150px;
+  border-radius: 50%;
+  background: #35DDC8;
+  transform: rotate(-45deg);
+  margin-top: 0px;
+  margin-left: -25px;
+}
+
+.eye {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border: 5px solid #2F525D;
+  border-radius: 50%;
+  margin-top: 50px;
+}
+.eye.left {
+  margin-left: 5px;
+}
+.eye.right {
+  margin-left: 95px;
+}
+.eye .pupil {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  margin: 17.5px;
+  background: #2F525D;
+}
+.eye .pupil:before, .eye .pupil:after {
+  content: '';
+  position: absolute;
+  background: white;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin: 6px;
+}
+.eye .pupil:after {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  margin-top: 13px;
+  margin-left: 4px;
+}
+
+.beak {
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background: #F39E37;
+  border-radius: 50%;
+  margin-top: 90px;
+  margin-left: 50px;
+  border: 5px solid #2F525D;
+}
+.beak .top {
+  position: absolute;
+  width: 60px;
+  height: 13px;
+  overflow: hidden;
+  border-bottom: 5px solid #2F525D;
+}
+.beak .top:before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 30px;
+  background: #FFAE3D;
+  border-radius: 50%;
+}
+
+.wing {
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  background: #DB5752;
+  border-radius: 50%;
+  margin-top: 90px;
+  border: 5px solid #2F525D;
+  transform: rotate(-45deg);
+  margin-left: 0px;
+  overflow: hidden;
+}
+.wing:before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 80px;
+  border-radius: 50%;
+  background: #F87773;
+  margin-left: 23px;
+  margin-top: -10px;
+  transform: rotate(-15deg);
+}
+.wing.right {
+  margin-top: -15px;
+  margin-left: 108px;
+}
+.wing.right:before {
+  margin-left: -25px;
+  margin-top: -7px;
+  transform: rotate(15deg);
+}
+
+.shadow {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background: #2F525D;
+  border-radius: 50%;
+  margin-left: 35px;
+  margin-top: 190px;
+  animation: shadow 3s infinite both;
+}
+
+.feather {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  border-radius: 50%;
+  border-left: 5px solid #2F525D;
+  margin-top: -30px;
+  margin-left: 82.5px;
+}
+.feather.left {
+  border-left: none;
+  border-right: 5px solid #2F525D;
+  margin-left: 37.5px;
+}
+
+@keyframes bird {
+  0% ,100% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(-5deg);
+  }
+}
+@keyframes shadow {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}
+.title {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin-top: 5%;
+  top: 0px;
+  width: 100%;
+  font-size: 30px;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+.title .subtitle {
+  font-size: 25px;
+}
+.title .credits {
+  font-size: 15px;
+}
+.title a {
+  text-decoration: none;
+  color: #31C6B3;
+}
+
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="back">
+  <a href="../../cards.html">
+    <span class="long-shadow"></span><span class="svg-icon flat-shadow" id="shadow-home"></span>
+  </a>
+</div>
+<div class="birddy">
+<div class="pen">
+  <div class="pen-info">
+    <div class="pen-title">Sitting Bird</div>
+  </div>
+  <div class="pen-content">
+    <div class="bird">
+      <div class="shadow"></div>
+      <div class="feather left"></div>
+      <div class="feather right"></div>
+      <div class="body">
+        <div class="wing left"></div>
+        <div class="wing right"></div>
+      </div>
+      <div class="eye right">
+        <div class="pupil"></div>
+      </div>
+      <div class="eye left">
+        <div class="pupil"></div>
+      </div>
+      <div class="beak">
+        <div class="top"></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<script  src="js/index.js"></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script type="text/javascript">
+      var homeShadow = "<svg class='flat_icon' xmlns='http://www.w3.org/2000/svg' width='100px' height='100px' viewBox='0 0 100 100' ><path class='circle' d='M50,2.125c26.441,0,47.875,21.434,47.875,47.875c0,26.441-21.434,47.875-47.875,47.875C17.857,97.875,2.125,76.441,2.125,50C2.125,23.559,23.559,2.125,50,2.125z'/><g class='icon'><path class='base' d='M50,29.753l23.293,17.47v26.011c0,2.572-2.086,4.659-4.66,4.659H31.366c-2.574,0-4.658-2.086-4.658-4.659V47.223L50,29.753z'/><path class='hole' d='M50,50.427c5.145,0,9.316,4.172,9.316,9.316c0,5.144-4.172,9.317-9.316,9.317c-5.146,0-9.316-4.174-9.316-9.317C40.684,54.599,44.854,50.427,50,50.427z'/><path class='roof' d='M50,35.188L22.826,55.374V38.295L50,18.107l27.174,20.188v17.08L50,35.188z'/></g></svg>"
+        $(homeShadow).appendTo('#shadow-home');
+  </script>
+
+
+
+</body>
+
+</html>
